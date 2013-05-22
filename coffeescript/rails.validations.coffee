@@ -158,7 +158,7 @@ window.ClientSideValidations.enablers =
     form   = input.form
     $form  = $(form)
 
-    $input.filter(':not(:radio):not([id$=_confirmation])')
+    $input.filter(':not([id$=_confirmation])')
       .each ->
         $(@).attr('data-validate', true)
       .on(event, binding) for event, binding of {

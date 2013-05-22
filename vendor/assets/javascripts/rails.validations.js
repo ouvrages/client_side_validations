@@ -234,7 +234,7 @@
       };
       for (event in _ref) {
         binding = _ref[event];
-        $input.filter(':not(:radio):not([id$=_confirmation])').each(function() {
+        $input.filter(':not([id$=_confirmation])').each(function() {
           return $(this).attr('data-validate', true);
         }).on(event, binding);
       }
